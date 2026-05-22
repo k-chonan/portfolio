@@ -1,0 +1,493 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/drawer_menu.css">
+    <link rel="stylesheet" href="css/style.css">
+    <!-- FontAwesome -->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css">
+    <!-- GoogleFonts -->
+    <link href="https://fonts.googleapis.com/css?family=Lato:300,400,700,900|Noto+Sans+JP:300,400,500,700,900&display=swap&subset=japanese" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Kanit:wght@500&display=swap" rel="stylesheet">
+    <!-- レスポンシブ -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Jquery -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <!--javascript-->
+    <script type="text/javascript" src="js/jquery-2.1.0.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/drawer/3.1.0/js/drawer.min.js"></script>
+    <script type="text/javascript" src="js/iscroll.js"></script>
+    <script type="text/javascript" src="js/parallax.js"></script>
+    <script type="text/javascript" src="js/script.js"></script>
+    <title>PortFolio</title>
+    <meta name="robots" content="noindex , nofollow" />
+</head>
+<body>
+
+<!-- トップバナー -->
+   <!-- PCのヘッダー -->
+    <header class="header_n">
+        <h1>
+            <a href="#">
+                <img src="images/logo.png" alt="K.CHONANのポートフォリオ">
+            </a>
+        </h1>
+        <nav>
+            <a href="#about">
+                ABOUT
+            </a>
+            <a href="#skill">
+                SKILL
+            </a>
+            <a href="#work">
+                WORK
+            </a>
+        </nav>
+    </header>
+    <!-- ドロワーメニュー -->
+    <header id="drawer">
+        <h1 class="drawer_logo">
+            <a href="#">
+                <img src="images/logo.png" alt="KEISUKEのポートフォリオ">
+            </a>
+        </h1>
+        <div id="navArea">
+          <nav>
+            <div class="inner">
+              <ul>
+                  <li>
+                      <a href="#about">
+                          ABOUT
+                      </a>
+                  </li>
+                  <li>
+                      <a href="#skill">
+                          SKILL
+                      </a>
+                  </li>
+                  <li>
+                      <a href="#work">
+                          WORK
+                      </a>
+                  </li>
+              </ul>
+            </div>
+          </nav>
+          <div class="toggle_btn">
+            <span></span>
+            <span></span>
+            <span></span>
+          </div>
+          <div id="mask"></div>
+        </div>
+    </header>
+
+    <!-- メイン画像 -->
+    <div class="kv_img">
+      <div class="video-container">
+        <div class="inner video-wrap">
+				<!-- 背景用の動画ファイル -->
+				<video id="bg-video"  poster="" muted autoplay playsinline loop><source src="images/KV_movie.mp4" type="video/mp4"></video>
+          <div class="kv_txt">
+            <p class="Text"><span class="Text-Span JS_ScrollAnimationItem">PORTFORIO</span></p>
+            <small>KEISUKE CHONAN</small>
+        </div>
+		  	</div>
+	  	</div>
+    </div>
+
+
+<!-- ABOUT ME -->
+
+<section id="about">
+    <div class="about_wrap">
+        <div class="about_txt">
+            <h2>
+                ABOUT ME
+            </h2>
+            <p>
+                これまでサービス業を中心に勤めてまいりましたが、勤務先の飲食店が閉店した事をきっかけに新しい事に挑戦しようと思い、web制作の世界に飛び込みました。<br>
+                6ヶ月間、webデザインの学校に通い、HTML.CSS.Adobeを中心に学びました。<br>
+                卒業後はNSSホールディングス株式会社に経験を積む為、アルバイトとして入社。<br>
+                現在は個人事業主としてHULINKと業務委託契約をしております。<br>
+                趣味は絵を描くこと、グルメ、お酒です。
+            </p>
+        </div>
+        <div class="about_photo">
+                <img src="images/about-1.jpg" alt="about1">
+        </div>
+    </div>
+</section>
+
+<!-- MY SKILL -->
+
+<section id="skill">
+    <h2>
+        MY SKILL
+    </h2>
+    <div class="skill_container">
+        <div class="skill_box">
+            <div class="skill_res">
+                <div class="skill_icon">
+                    <i class="fas fa-code" style="color: #6b2aa3;"></i>
+                </div>
+                <h3>
+                    <i class="fas fa-code" style="color: #6b2aa3;"></i>
+                    Coding
+                </h3>
+                <p class="skill_box_txt">
+                    基本的なHTML、CSSの知識はあります。
+                </p>
+            </div>
+        </div>
+        <div class="skill_box">
+            <div class="skill_res">
+                <div class="skill_icon">
+                    <i class="fab fa-js-square" style="color: #f7e016;"></i>
+                </div>
+                <h3>
+                    <i class="fab fa-js-square" style="color: #f7e016;"></i>
+                    JavaScript
+                </h3>
+                <p class="skill_box_txt">
+                    導入したいものは調べて解決できます。
+                </p>
+            </div>
+        </div>
+      </div>
+      <div class="skill_container">
+
+        <div class="skill_box">
+            <div class="skill_res">
+                <div class="skill_icon">
+                    <i class="fab fa-wordpress" style="color: #04759b;"></i>
+                </div>
+                <h3>
+                    <i class="fab fa-wordpress" style="color: #04759b;"></i>
+                    WordPress
+                </h3>
+                <p class="skill_box_txt">
+                    修正、コンテンツの追加など可能。<br>
+                    新規制作、プラグインは勉強中です。
+                </p>
+            </div>
+        </div>
+        <div class="skill_box">
+            <div class="skill_res">
+                <div class="skill_icon">
+                    <i class="fab fa-adobe" style="color: #fb0601;"></i>
+                </div>
+                <h3>
+                    <i class="fab fa-adobe" style="color: #fb0601;"></i>
+                    Adobe
+                </h3>
+                <p class="skill_box_txt">
+                    illustrator（わからない事は調べて解決できます）<br>
+                    Photoshop（わからない事は調べて解決できます）<br>
+
+                </p>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- MY WORK -->
+
+<section id="work">
+    <div class="work_wrap">
+        <div class="work_title">
+            <h2>
+                MY WORK
+            </h2>
+            <h3>
+                実際に制作した実績を紹介します。<br>
+                ゼロからの構築ではなく、テンプレートサイトからお客様に選んでいただき、改修して制作しております。<br>
+                現在の仕事では主にテンプレートサイトの改修やバナー作成がメインです。
+
+            </h3>
+        </div>
+        <div class="work_container">
+            <div class="work_box">
+                <div class="work_box_photo">
+                    <img src="images/work-1.jpg" alt="実績01">
+                    <p class="work_photo_txt">
+                        実績01
+                    </p>
+                </div>
+                <!-- <p class="work_box_txt">
+                </p> -->
+                <ul>
+                    <li>
+                        <span>
+                            採用サイト
+                        </span>
+                        <p>
+                            有限会社キュードパリ 様
+                        </p>
+                    </li>
+                    <li>
+                        <span>
+                            期間
+                        </span>
+                        <p>
+                            3日（24時間）
+                        </p>
+                    </li>
+                    <li>
+                        <span>
+                            URL
+                        </span>
+                        <p>
+                            <a href="https://culdeparis-recruit.com/" target=”_blank”>https://culdeparis-recruit.com/</a>
+                        </p>
+                    </li>
+                    <li>
+                        <span>
+                            テンプレ
+                        </span>
+                        <p>
+                            <a href="https://rcmp-sample.com/10/" target=”_blank”>https://rcmp-sample.com/10/</a>
+                        </p>
+                    </li>
+                </ul>
+            </div>
+            <div class="work_box">
+                <div class="work_box_photo">
+                    <img src="images/work-4.jpg" alt="実績04">
+                    <p class="work_photo_txt">
+                        実績02
+                    </p>
+                </div>
+                <!-- <p class="work_box_txt">
+                </p> -->
+                <ul>
+                    <li>
+                        <span>
+                            採用サイト
+                        </span>
+                        <p>
+                            株式会社さくらいふ 様
+                        </p>
+                    </li>
+                    <li>
+                        <span>
+                            期間
+                        </span>
+                        <p>
+                          3日（24時間）
+                        </p>
+                    </li>
+                    <li>
+                        <span>
+                            URL
+                        </span>
+                        <p>
+                          <a href="https://sakurahoikuen-recruit.com/" target=”_blank”>https://sakurahoikuen-recruit.com/</a>
+                        </p>
+                    </li>
+                    <li>
+                        <span>
+                            テンプレ
+                        </span>
+                        <p>
+                            <a href="https://rcmp-sample.com/07/" target=”_blank”>https://rcmp-sample.com/07/</a>
+                        </p>
+                    </li>
+                </ul>
+            </div>
+            <!-- <div class="work_box">
+                <div class="work_box_photo">
+                    <img src="images/work-2.jpg" alt="実績02">
+                    <p class="work_photo_txt">
+                        実績02
+                    </p>
+                </div>
+                <ul>
+                    <li>
+                        <span>
+                            採用サイト
+                        </span>
+                        <p>
+                            株式会社ネヘミヤ 様
+                        </p>
+                    </li>
+                    <li>
+                        <span>
+                            期間
+                        </span>
+                        <p>
+                          1日（8時間）
+                        </p>
+                    </li>
+                    <li>
+                        <span>
+                            URL
+                        </span>
+                        <p>
+                          <a href="https://nehemiya-recruit.com/" target=”_blank”>https://nehemiya-recruit.com/</a>
+                        </p>
+                    </li>
+                    <li>
+                        <span>
+                            テンプレ
+                        </span>
+                        <p>
+                            <a href="https://rcmp-sample.com/05/" target=”_blank”>https://rcmp-sample.com/05/</a>
+                        </p>
+                    </li>
+                </ul>
+            </div> -->
+        </div>
+
+        <div class="work_container">
+            <!-- <div class="work_box">
+                <div class="work_box_photo">
+                    <img src="images/work-3.jpg" alt="実績03">
+                    <p class="work_photo_txt">
+                        実績03
+                    </p>
+                </div>
+                <ul>
+                    <li>
+                        <span>
+                            採用サイト
+                        </span>
+                        <p>
+                            株式会社アスク 様
+                        </p>
+                    </li>
+                    <li>
+                        <span>
+                            期間
+                        </span>
+                        <p>
+                            2日（16時間）
+                        </p>
+                    </li>
+                    <li>
+                        <span>
+                            URL
+                        </span>
+                        <p>
+                            <a href="https://ask-recruit.com/" target=”_blank”>https://ask-recruit.com/</a>
+                        </p>
+                    </li>
+                    <li>
+                        <span>
+                            テンプレ
+                        </span>
+                        <p>
+                            <a href="https://rcmp-sample.com/08/" target=”_blank”>https://rcmp-sample.com/08/</a>
+                        </p>
+                    </li>
+                </ul>
+            </div> -->
+            <div class="work_box">
+                <div class="work_box_photo">
+                    <img src="images/work-5.jpg" alt="実績03">
+                    <p class="work_photo_txt">
+                        実績03
+                    </p>
+                </div>
+                <!-- <p class="work_box_txt">
+                </p> -->
+                <ul>
+                    <li>
+                        <span>
+                            採用サイト
+                        </span>
+                        <p>
+                            株式会社進興精工 様
+                        </p>
+                    </li>
+                    <li>
+                        <span>
+                            期間
+                        </span>
+                        <p>
+                            4日（32時間）
+                        </p>
+                    </li>
+                    <li>
+                        <span>
+                            URL
+                        </span>
+                        <p>
+                            <a href="https://sinko-seikoh-recruit.com/" target=”_blank”>https://sinko-seikoh-recruit.com/</a>
+                        </p>
+                    </li>
+                    <li>
+                        <span>
+                            テンプレ
+                        </span>
+                        <p>
+                            <a href="https://staging-site03.com/" target=”_blank”>https://staging-site03.com/</a>
+                        </p>
+                        こちらのテンプレートのデザインとコーディングも担当しました。
+                    </li>
+                </ul>
+            </div>
+            <div class="work_box">
+                <div class="work_box_photo">
+                    <img src="images/work-6.jpg" alt="実績04">
+                    <p class="work_photo_txt">
+                        実績04
+                    </p>
+                </div>
+                <!-- <p class="work_box_txt">
+                </p> -->
+                <ul>
+                    <li>
+                        <span>
+                            公式サイト
+                        </span>
+                        <p>
+                            株式会社KNN 様
+                        </p>
+                    </li>
+                    <li>
+                        <span>
+                            期間
+                        </span>
+                        <p>
+                          4日（32時間）
+                        </p>
+                    </li>
+                    <li>
+                        <span>
+                            URL
+                        </span>
+                        <p>
+                          <a href="https://lp07.knn-homeservice.com/" target=”_blank”>https://lp07.knn-homeservice.com/</a>
+                        </p>
+                    </li>
+                    <li>
+                        <span>
+                            テンプレ
+                        </span>
+                        <p>
+                            別ファイル（ファイル内3-5）
+                        </p>
+                    </li>
+                </ul>
+            </div>
+        </div>
+
+
+    </div>
+</section>
+
+
+   <!-- フッター -->
+   <footer class="topbanner3_footer">
+       <div class="topbanner3_line"></div>
+   </footer>
+
+<script type="text/javascript" src="js/drawer_menu.js"></script>
+<script src="js/main.js"></script>
+</body>
+
+</html>

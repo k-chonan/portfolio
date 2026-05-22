@@ -1,0 +1,707 @@
+/*----------------------------
+  index/基本設定/header
+-----------------------------*/
+
+html {
+	background: linear-gradient(90deg, #F3FBFB 0%, #F3FBFB 5%, #FFF 5%, #FFF 100%);
+}
+.wrap {
+	max-width: 1200px;
+	width: 95%;
+	margin: 0 auto;
+}
+main {
+	max-width: 1000px;
+	width: 100%;
+	margin: 0 auto;
+	padding-bottom: 120px;
+}
+h2 {
+	display: inline-block;
+	margin-bottom: 5px;
+}
+h4 {
+	font-size: 3.2rem;
+	padding: 0 22px;
+	background: transparent;
+	border-left: solid 10px #A0D9D5;
+	line-height: 1;
+	font-weight: 700;
+	font-family: "FOT-筑紫A丸ゴシック Std B", 游ゴシック体, YuGothic, 游ゴシック, "Yu Gothic", メイリオ, sans-serif;
+}
+.link_btn {
+	border: #128888 2px solid;
+	border-radius: 50px;
+	padding: 13px 0;
+	max-width: 260px;
+	width: 100%;
+	background: url("../img/btn_icon.png")no-repeat 92.8%;
+	margin: 0 auto;
+	transition: 0.3s;
+	text-align: center;
+	font-weight: 700;
+	font-family: "FOT-筑紫A丸ゴシック Std B", 游ゴシック体, YuGothic, 游ゴシック, "Yu Gothic", メイリオ, sans-serif;
+}
+.link_btn:hover {
+	background: #F3FBFB url("../img/btn_icon.png")no-repeat 97%;
+}
+@media screen and (max-width: 1350px) {
+	html {
+		background: linear-gradient(90deg, #F3FBFB 0%, #F3FBFB 2.5%, #FFF 2.5%, #FFF 100%);
+	}
+}
+@media screen and (max-width: 768px) {
+	html {
+		background: #FFF;
+	}
+}
+@media screen and (max-width: 767px) {
+	h4 {
+		font-size: 2.6rem;
+	}
+}
+.wrap {
+	max-width: 1200px;
+	width: 95%;
+	margin: 0 auto;
+}
+.hero img {
+	border-radius: 230px 0 230px 0;
+	width: 100%;
+	background: #F3FBFB;
+	margin-top: 21px;
+}
+a.index_current::after {
+	position: absolute;
+	display: block;
+	content: "・";
+	left: 35%;
+	bottom: -16px;
+	color: #128888;
+}
+@media screen and (max-width: 768px) {
+	.hero img {
+		height: 380px;
+		object-fit: cover;
+	}
+}
+@media screen and (max-width: 480px) {
+	.hero img {
+		height: 335px;
+		object-fit: cover;
+		border-radius: 100px 0 100px 0;
+	}
+}
+/*----------------------------
+  ご案内
+-----------------------------*/
+
+.is01 {
+	padding: 65px 0 90px;
+	text-align: center;
+}
+.is01 .inner {
+	padding: 45px 0 0;
+}
+p:first-of-type {
+	text-align: center;
+	padding-bottom: 55px;
+}
+.is01 .flex {
+	background: #E3F7F5;
+	width: 100%;
+	justify-content: space-around;
+	padding: 40px 8%;
+	margin-bottom: 55px;
+}
+p:nth-of-type(2) {
+	display: inline-block;
+	margin-bottom: 50px;
+}
+@media screen and (max-width: 768px) {
+	.is01 p:first-of-type {
+		max-width: 80%;
+		margin: 0 auto;
+	}
+	.is01 .flex {
+		padding: 40px 2.5%;
+		flex-wrap: wrap;
+	}
+	p:nth-of-type(2) {
+		width: 80%;
+		margin: 0 auto 50px;
+	}
+	p:nth-of-type(2) {
+		width: 100%;
+	}
+}
+@media screen and (max-width: 767px) {
+	.is01 .flex img {
+		margin: 0 15px 20px;
+	}
+}
+@media screen and (max-width: 480px) {
+	.is01 p:first-of-type {
+		max-width: 100%;
+		text-align: left;
+	}
+	.is01 .flex {
+		padding: 45px 2.5% 32px;
+	}
+	.is01 .flex img {
+		margin: 0 auto 23px;
+		width: 50%;
+		max-width: 127px;
+		height: auto;
+	}
+}
+/*----------------------------
+  歯科矯正
+-----------------------------*/
+
+.is02 {
+	padding-bottom: 90px;
+}
+.is02 .flex {
+	justify-content: space-between;
+	align-items: center;
+}
+.is02 img {
+	border-radius: 150px 0 150px 0;
+	max-width: 520px;
+	width: 52%;
+}
+.is02 .txt {
+	max-width: 435px;
+	width: 43.5%;
+}
+.is02 p {
+	text-align: justify;
+	margin: 35px 0 0;
+}
+@media screen and (max-width: 767px) {
+	.is02 .flex {
+		display: block;
+	}
+	.is02 img, .is02 .txt {
+		width: 100%;
+		max-width: 520px;
+		margin: 0 auto;
+	}
+	.is02 img {
+		border-radius: 100px 0 100px 0;
+		margin-bottom: 40px;
+	}
+}
+/*----------------------------
+  診察の流れ
+-----------------------------*/
+
+.is03 {
+	text-align: center;
+	padding-bottom: 95px;
+}
+.is03 h3 {
+	display: inline-block;
+	margin-bottom: 65px;
+}
+.is03 .flex {
+	justify-content: space-around;
+}
+.is03 .txt {
+	max-width: 195px;
+	width: 19.5%;
+}
+.is03 .txt p {
+	padding-top: 30px;
+	text-align: left;
+	line-height: 2;
+}
+@media screen and (max-width: 768px) {
+	.is03 .txt {
+		width: 23%;
+	}
+}
+@media screen and (max-width: 767px) {
+	.is03 h3 {
+		margin-bottom: 48px;
+	}
+	.is03 .flex {
+		display: block;
+	}
+	.is03 .txt {
+		width: 100%;
+		max-width: 200px;
+		margin: 0 auto;
+	}
+	.is03 .txt p {
+		padding-top: 20px;
+	}
+}
+/*----------------------------
+  料金について
+-----------------------------*/
+
+.is04 {
+	max-width: 750px;
+	width: 75%;
+	margin: 0 auto;
+	position: relative;
+	margin-bottom: 90px;
+}
+.is04 .hero {
+	border-radius: 200px 0 200px 0;
+	width: 100%;
+	height: auto;
+}
+.is04 p {
+	padding: 30px 0 0;
+	text-align: left;
+	width: 63%;
+}
+.circle {
+	position: absolute;
+	bottom: 0;
+	right: 0;
+	width: 200px;
+	height: 200px;
+	border-radius: 100%;
+	border: 2px solid #128888;
+	background: #FFF;
+	text-align: center;
+	padding: 35px 0 38px;
+	transition: 0.5s;
+}
+.circle p {
+	text-align: center;
+	width: 100%;
+	padding: 0 0 10px;
+	font-weight: 700;
+	font-family: "FOT-筑紫A丸ゴシック Std B", 游ゴシック体, YuGothic, 游ゴシック, "Yu Gothic", メイリオ, sans-serif;
+	color: #333;
+}
+.circle img {
+	width: 98px;
+	height: auto;
+	margin: 0 auto 10px;
+}
+.circle .arrow {
+	width: 24px;
+	height: auto;
+}
+.circle:hover {
+	background: #F3FBFB;
+	color: #128888;
+	letter-spacing: 0.3rem;
+}
+@media screen and (max-width: 767px) {
+	.is04 {
+		width: 100%;
+		max-width: 520px;
+	}
+	.is04 .hero {
+		border-radius: 100px 0 100px 0;
+	}
+	.circle {
+		top: 45%;
+		right: 0;
+		width: 150px;
+		height: 150px;
+		background: rgb(255, 255, 255, .8);
+		padding: 10px 0;
+	}
+	.is04 p {
+		padding: 30px 0 0;
+		width: 100%;
+	}
+	.circle p {
+		padding: 0 0 5px;
+	}
+	.circle img {
+		margin-bottom: 3px;
+	}
+}
+@media screen and (max-width: 480px) {
+	.circle {
+		top: 24%;
+	}
+}
+/*----------------------------
+  よくあるご質問
+-----------------------------*/
+
+.is05 {
+	padding: 95px 0 50px;
+}
+.is05 .flex {
+	justify-content: space-between;
+	align-items: center;
+}
+.is05 img {
+	border-radius: 150px 0 150px 0;
+	max-width: 520px;
+	width: 52%;
+}
+.is05 .txt {
+	max-width: 435px;
+	width: 43.5%;
+}
+.is05 p {
+	text-align: justify;
+	margin: 35px 0 0;
+}
+@media screen and (max-width: 767px) {
+	.is05 .flex {
+		display: block;
+	}
+	.is05 img, .is05 .txt {
+		width: 100%;
+		max-width: 520px;
+		margin: 0 auto;
+	}
+	.is05 img {
+		border-radius: 100px 0 100px 0;
+		margin-bottom: 40px;
+	}
+}
+
+/*----------------------------
+  お知らせ
+-----------------------------*/
+.is-news {
+    text-align: center;
+    padding-bottom: 85px;
+}
+.is-news .inner {
+    padding: 30px 0 40px;
+}
+.is-news .CMS-NEWS-ITEM{
+  margin:0 auto;
+	border-bottom: #128888 1px dashed;
+}
+.is-news .CMS-NEWS-ITEM a{
+  display: flex;
+  transition: 0.3s all;
+  padding:15px 0;
+	align-items: center;
+}
+.is-news .CMS-NEWS-ITEM a:hover{
+  text-decoration: none;
+}
+.is-news .CMS-NEWS-THUMBNAIL {
+	border-radius: 50px 0 50px 0;
+  width: 150px;
+  height: 100px;
+  object-fit: cover;
+  transition: 0.5s all;
+}
+.is-news .CMS-NEWS-TIME {
+	min-width: 163px;
+  margin: 0 1em;
+  white-space: nowrap;
+	background: #F7B32A;
+  color: #FFF;
+  padding: 5px 14px;
+  display: inline-block;
+	font-family: "FOT-筑紫A丸ゴシック Std B", 游ゴシック体, YuGothic, 游ゴシック, "Yu Gothic", メイリオ, sans-serif;
+  font-weight: 700;
+}
+.is-news .CMS-NEWS-LINK{
+	text-align: left;
+}
+.is-news .CMS-NEWS-INDEX{
+  margin-bottom: 20px;
+}
+.is-news .CMS-NEWS-MORE-READ{
+  display: none;
+}
+
+@media screen and (max-width: 768px){
+.is-news .CMS-NEWS-TIME {
+    min-width: 145px;
+    margin: 0 1em;
+    white-space: nowrap;
+    background: #F7B32A;
+    color: #FFF;
+    padding: 5px 5px;
+	}
+}
+
+@media screen and (max-width: 540px){
+	.is-news .CMS-NEWS-ITEM a{
+	  display: block;
+	  transition: 0.3s all;
+	  padding:15px 0;
+		align-items: center;
+	}
+	.is-news .CMS-NEWS-THUMBNAIL {
+		border-radius: 60px 0 60px 0;
+		width: 70%;
+    height: 150px;
+    margin: 0 auto 15px;
+  }
+	.is-news .CMS-NEWS-TIME {
+    margin: 0 0 10px;
+	}
+	.is-news .CMS-NEWS-LINK {
+    text-align: center;
+	}
+}
+
+@media screen and (max-width: 480px){
+  .is-news{
+    padding:40px 0;
+  }
+	.is-news .CMS-NEWS-ITEM{
+	  width: 100%;
+  }
+  .is-news .CMS-NEWS-LINK-CONTENT {
+    display: block;
+		padding: 10px;
+  }
+  .is-news .CMS-NEWS-THUMBNAIL {
+    width: 100%;
+    height: 200px;
+  }
+	.is-news .CMS-NEWS-MORE-READ{
+    width: 225px;
+    margin:20px auto 0;
+  }
+}
+
+
+/*----------------------------
+  コラム
+-----------------------------*/
+.is-column {
+    text-align: center;
+    padding-bottom: 85px;
+}
+.is-column .inner {
+    padding: 30px 0 40px;
+}
+.is-column .CMS-ARTICLE-INDEX {
+  display: flex;
+  margin-bottom: 40px;
+}
+.is-column .CMS-ARTICLE-ITEM {
+  width: 32%;
+  margin-right: 3%;
+	padding-bottom: 5px;
+}
+
+.is-column .CMS-ARTICLE-LINK{
+	text-align: left;
+}
+.is-column .CMS-ARTICLE-ITEM:nth-child(3) {
+  margin-right: 0;
+}
+.is-column .CMS-ARTICLE-ITEM:hover {
+  box-shadow: 0 3px rgba(247, 179, 42, 1);
+  transition: all .2s ease-in-out;
+}
+.is-column .CMS-ARTICLE-LINK-CONTENT {
+  width: 100%;
+  color: #111111;
+}
+.is-column .CMS-ARTICLE-LINK-CONTENT:hover {
+  text-decoration: none;
+  color: rgba(17, 17, 17, 0.65);
+  transition: all .2s ease-in-out;
+}
+.is-column .CMS-ARTICLE-LINK-CONTENT img {
+  width: 100%;
+  height: 220px;
+  object-fit: cover;
+	border-radius: 50px 0 50px 0;
+}
+.is-column .CMS-ARTICLE-TIME {
+  margin: .5em 0;
+	min-width: 100%;
+  white-space: nowrap;
+  background: #F7B32A;
+  color: #FFF;
+  padding: 5px 14px;
+  display: inline-block;
+  font-family: "FOT-筑紫A丸ゴシック Std B", 游ゴシック体, YuGothic, 游ゴシック, "Yu Gothic", メイリオ, sans-serif;
+  font-weight: 700;
+}
+.is-column .CMS-ARTICLE-MORE-READ {
+  display: none;
+}
+
+@media screen and (max-width: 1024px) {
+	.is-column .CMS-ARTICLE-ITEM {
+		padding-bottom: 10px;
+	  box-shadow: 0 3px rgba(247, 179, 42, 1);
+	  transition: all .2s ease-in-out;
+	}
+}
+
+@media screen and (max-width: 768px) {
+  .is-column .CMS-ARTICLE-LINK-CONTENT img {
+    height: 150px;
+  }
+}
+
+@media screen and (max-width: 540px) {
+	.is-column .CMS-ARTICLE-LINK-CONTENT img {
+		border-radius: 60px 0 60px 0;
+    width: 70%;
+    height: 150px;
+    margin: 0 auto 15px;
+	}
+
+  .is-column .CMS-ARTICLE-INDEX {
+    display: block;
+  }
+  .is-column .CMS-ARTICLE-ITEM {
+    width: 100%;
+    margin: 0 auto 1.5em;
+		box-shadow: 0 2px rgba(247, 179, 42, 1);
+  }
+	.is-column .CMS-ARTICLE-TIME{
+		min-width: 145px;
+    margin: 0 0 10px;
+    white-space: nowrap;
+    background: #F7B32A;
+    color: #FFF;
+    padding: 5px 5px;
+	}
+}
+
+@media screen and (max-width: 480px) {
+	.is-column .CMS-ARTICLE-LINK-CONTENT img {
+	  width: 100%;
+	  height: 200px;
+	}
+}
+
+
+/*----------------------------
+  アクセス
+-----------------------------*/
+
+.is06 {
+	text-align: center;
+	padding-bottom: 85px;
+}
+.is06 .flex {
+	justify-content: space-between;
+	align-items: center;
+	padding-top: 50px;
+}
+.is06 .flex_l {
+	width: 48%;
+	max-width: 500px;
+}
+.is06 .flex_r {
+	width: 46.5%;
+	max-width: 465px;
+}
+.is06 .logo {
+	margin-left: auto;
+}
+.is06 p {
+	text-align: right;
+	padding: 10px 0 15px;
+	font-size: 1.5rem;
+}
+.is06 p span {
+	background: #89BB4D;
+	padding: 3px 6px;
+	color: #FFF;
+}
+.is06_img {
+	border-radius: 150px 0 150px 0;
+	width: 100%;
+	max-height: 330px;
+	object-fit: cover;
+}
+.is06 .flex_r img {
+	width: 100%;
+	height: auto;
+}
+.is06 a {
+	display: block;
+	padding-bottom: 8px;
+}
+.is06 .txt {
+	display: flex;
+	justify-content: center;
+	font-size: 1.45rem;
+	width: 100%;
+	padding: 7px 1% 6.5px;
+	text-align: left;
+	line-height: 1.47;
+	letter-spacing: 0.11rem;
+	background: #128888;
+	color: #FFF;
+	margin: 12px 0 0;
+	font-weight: 700;
+	font-family: "FOT-筑紫A丸ゴシック Std B", 游ゴシック体, YuGothic, 游ゴシック, "Yu Gothic", メイリオ, sans-serif;
+}
+.is06 .txt span {
+	color: #F7B32A;
+	letter-spacing: 0.2rem;
+	font-size: 1.55rem;
+}
+.is06 .box {
+	font-size: 1.4rem;
+	width: 100%;
+	padding: 7px 1% 5.5px;
+	text-align: left;
+	display: flex;
+	justify-content: center;
+	line-height: 1.38;
+	border: #128888 1px solid;
+}
+@media screen and (max-width: 768px) {
+	.is06 .txt {
+		font-size: 1.3rem;
+		padding: 7px 2.5% 6px;
+	}
+	.is06 .txt span {
+		font-size: 1.4rem;
+		letter-spacing: 0.15rem;
+	}
+	.is06 .box {
+		font-size: 1.3rem;
+		padding: 7px 2.5% 6px;
+		letter-spacing: normal;
+	}
+}
+@media screen and (max-width: 767px) {
+	.is06 .flex {
+		display: block;
+		max-width: 520px;
+		margin: 0 auto;
+	}
+	.is06 .flex_l, .is06 .flex_r {
+		width: 100%;
+		max-width: none;
+	}
+	.is06_img {
+		border-radius: 100px 0 100px 0;
+	}
+	.is06 .logo {
+		margin: 0 auto;
+	}
+	.is06 p {
+		text-align: center;
+		padding-bottom: 10px;
+	}
+	.is06 a {
+		padding: 15px 0 5px;
+		width: 90%;
+		margin: 0 auto;
+	}
+}
+/*----------------------------
+  MAP
+-----------------------------*/
+
+.is07 iframe {
+	width: 100%;
+	height: 200px;
+}
