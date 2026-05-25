@@ -269,13 +269,13 @@ body{
 }
 .video-wrap{
     position: relative;
-    height: 85vh;
+    height: 95vh;
     overflow: hidden;
 }
 @media (max-width: 767px){
   .video-wrap{
       position: relative;
-      height: 100vh;
+      height: 65vh;
       overflow: hidden;
   }
 }
