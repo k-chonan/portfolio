@@ -275,7 +275,7 @@ body{
 @media (max-width: 767px){
   .video-wrap{
       position: relative;
-      height: 65vh;
+      height: 55vh;
       overflow: hidden;
   }
 }
